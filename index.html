@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fist Birb</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils/camera_utils.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/@mediapipe/drawing_utils/drawing_utils.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/@mediapipe/hands/hands.js"></script>
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <main class="app">
+    <header>
+      <div class="brand"><span>✊</span><div><p>WEBCAM ARCADE</p><h1>Fist Birb</h1></div></div>
+      <div class="score-pill"><span>BEST</span><strong id="bestScore">0</strong></div>
+    </header>
+
+    <section class="hero">
+      <div>
+        <p class="eyebrow">THE WORLD'S MOST SERIOUS FIST-CONTROLLED FLIGHT GAME</p>
+        <h2>Raise your fist.<br><em>Save the birb.</em></h2>
+        <p class="description">Raise your closed fist to fly higher. Lower it to swoop through the glowing gates.</p>
+      </div>
+      <div class="how">
+        <div><b>01</b><span>Start camera</span></div>
+        <div><b>02</b><span>Make a fist</span></div>
+        <div><b>03</b><span>Navigate!</span></div>
+      </div>
+    </section>
+
+    <section class="game-card">
+      <div class="game-stage">
+        <canvas id="gameCanvas" width="960" height="540"></canvas>
+        <div id="gameOverlay" class="game-overlay">
+          <div class="overlay-card">
+            <div class="plane">🐦</div>
+            <p class="eyebrow">READY FOR TAKEOFF?</p>
+            <h3 id="overlayTitle">Your fist is the controller.</h3>
+            <p id="overlayText">Start the camera, then hold a closed fist in the preview.</p>
+            <button id="mainButton" class="launch">Start Camera</button>
+          </div>
+        </div>
+        <div class="hud">
+          <div><span>SCORE</span><strong id="score">0</strong></div>
+          <div id="trackingBadge" class="tracking"><i></i> CAMERA OFF</div>
+        </div>
+      </div>
+
+      <aside class="control-panel">
+        <div class="camera-title"><span>FIST TRACKER</span><div id="noseValue">WAITING</div></div>
+        <div class="camera-box">
+          <video id="video" autoplay muted playsinline></video>
+          <canvas id="faceCanvas"></canvas>
+          <div id="cameraMessage" class="camera-message">Camera preview will appear here.</div>
+        </div>
+        <div class="altitude"><span>HIGH</span><div><i id="altitudeFill"></i></div><span>LOW</span></div>
+        <p id="status">No camera connected yet. Make a fist when ready.</p>
+      </aside>
+    </section>
+
+    <footer>Privacy-friendly: video is processed only in your browser and is never stored or sent anywhere.</footer>
+  </main>
+</body>
+</html>
