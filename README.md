@@ -2,26 +2,25 @@
 
 
 
-# [Project Name] 🎯
+# [FIRST BIRD] 🎯
 
 
 ## Basic Details
-### Team Name: [Name]
+### Team Name: [P145]
 
 
 ### Team Members
-- Team Lead: [Name] - [College]
-- Member 2: [Name] - [College]
-- Member 3: [Name] - [College]
+- Team Lead: [FAHAD MOHAMMED BAVA] - [AISAT]
+- Member 2: [ARJUN BAIJU] - [AISAT]
 
 ### Project Description
-[2-3 lines about what your project does]
+[Fun interactive twist to the classic flappy bird]
 
 ### The Problem (that doesn't exist)
-[What ridiculous problem are you solving?]
+[Lack of interaction in flappy bird]
 
 ### The Solution (that nobody asked for)
-[How are you solving it? Keep it fun!]
+[It is a useless solution ]
 
 ## Technical Details
 ### Technologies/Components Used
